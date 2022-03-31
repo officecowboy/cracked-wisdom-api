@@ -25,8 +25,11 @@ let controller = {
   },
   getAll(request, response) {
 
+    let tag = request.query.tag
+    let author = request.query.author
+
     model
-      .find()
+      .find(tag ? { tag } : author ? { author } : {})
       .then(data => response.json(data))
       .catch(error => {
         console.error("Error on getAll()")
