@@ -38,6 +38,36 @@ let controller = {
           .json({ error: "Something went wrong" })
       })
   },
+  getRandom(request, response) {
+    model
+      .aggregate(
+        [
+          { $sample: { size: 1 } }
+        ]
+      )
+      .then(data => response.json(data))
+      .catch(error => {
+        console.error("Error on getAll()")
+        response
+          .status(500)
+          .json({ error: "Something went wrong" })
+      })
+  },
+  getRandomTen(request, response) {
+    model
+      .aggregate(
+        [
+          { $sample: { size: 10 } }
+        ]
+      )
+      .then(data => response.json(data))
+      .catch(error => {
+        console.error("Error on getAll()")
+        response
+          .status(500)
+          .json({ error: "Something went wrong" })
+      })
+  },
   update(request, response) {
     model
       .findByIdAndUpdate(request.params.id, request.body, { new: true })
