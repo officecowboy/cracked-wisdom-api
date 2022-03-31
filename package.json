@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "start": "node index.js",
+    "seed": "node seed/data.js"
+  },
   "dependencies": {
     "express": "^4.17.3",
     "mongoose": "^6.2.9"
