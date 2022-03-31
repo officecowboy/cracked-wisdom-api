@@ -1,8 +1,8 @@
 let express = require('express')
-let equipmentRouter = require('./quotes/router')
+let quotesRouter = require('./quotes/router')
 
 let router = new express.Router()
 
-router.use('/quotes', equipmentRouter)
+router.use('/quotes', quotesRouter)
 
 module.exports = router
