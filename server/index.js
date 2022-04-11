@@ -1,6 +1,6 @@
 let app = require('./app')
 
-const PORT = 9000
+const PORT = process.env.PORT || 9000
 let server = app.listen(PORT)
 
 server.on('listening', () => console.log("Listening on port " + PORT))
