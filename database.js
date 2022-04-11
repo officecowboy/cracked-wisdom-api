@@ -2,7 +2,8 @@
 let mongoose = require('mongoose')
 
 // Connect to MongoDB
-const MONGODB_URI = process.env.PROD_MONGODB || `mongodb+srv://officecowboy:lonelycomputer@cracked-cluster-1.9smdo.mongodb.net/cracked-wisdom-api?retryWrites=true&w=majority`
+const DATABASE_NAME = 'crackedwisdom'
+const MONGODB_URI = process.env.PROD_MONGODB || `mongodb://127.0.0.1:27017/${DATABASE_NAME}`
 let mongooseConfig = { useNewUrlParser: true, useUnifiedTopology: true }
 mongoose.connect(MONGODB_URI, mongooseConfig)
 
