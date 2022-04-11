@@ -49,3 +49,11 @@ npm start
 | DELETE | /quotes/:id | Deletes a single quote by ID.    |
 
 *Note: only GET commands will work in browser*
+
+## Next Steps
+
+I'm in the process of adding a second model that contains images of smartphones with cracked screens. My end goal with this project is to build a front-end interface that allows users to generate and download random quote cards, such as :
+
+![mock-up](crackedwisdom_mockup.jpg)
+
+I will then set up a Twitter bot [@crackedwisdom](https://twitter.com/crackedwisdom) that posts a new quote card everyday.
