@@ -3,8 +3,9 @@ let mongoose = require('mongoose')
 
 // Connect to MongoDB
 const DATABASE_NAME = 'crackedwisdom'
+const MONGODB_URI = process.env.PROD_MONGODB || `mongodb://127.0.0.1:27017/${DATABASE_NAME}`
 let mongooseConfig = { useNewUrlParser: true, useUnifiedTopology: true }
-mongoose.connect(`mongodb://127.0.0.1:27017/${DATABASE_NAME}`, mongooseConfig)
+mongoose.connect(MONGODB_URI, mongooseConfig)
 
 // Event Listeners
 mongoose.connection.on('connected', () => console.log("Connected to database"))
