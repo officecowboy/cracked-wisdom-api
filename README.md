@@ -56,4 +56,4 @@ npm start
 
 ## Next Steps
 
-I'm in the process of adding a second model that contains images of smartphones with cracked screens. My end goal with this project is to build a front-end interface that allows users to generate and download random quote cards, like the preview image above. I will then set up a Twitter bot ([@crackedwisdom](https://twitter.com/crackedwisdom)) that posts a new quote card everyday.
+I'm in the process of adding a second model that contains images of smartphones with cracked screens. My end goal with this project is to build a front-end interface that allows users to generate and download random quote cards like the preview image above. Then I'll set up a Twitter bot ([@crackedwisdom](https://twitter.com/crackedwisdom)) that posts a new quote card everyday.
