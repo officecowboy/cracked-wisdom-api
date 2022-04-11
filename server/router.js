@@ -3,7 +3,7 @@ let quotesRouter = require('./quotes/router')
 
 let router = new express.Router()
 
-router.get("/", (req, res) => res.send("This is the API root!"));
+router.get("/", (req, res) => res.send("Welcome to Cracked Wisdom!"));
 
 router.use('/', quotesRouter)
 
