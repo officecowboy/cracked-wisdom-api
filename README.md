@@ -46,7 +46,7 @@ npm start
 | GET    | /quotes/:id          | Retrieves a single quote by object ID.  |
 | GET    | /quotes/random   | Retrieves one random quote. |
 | GET    | /quotes/random-ten | Retrieves an array of ten random quotes.  |
-| GET    | /quotes/?tag=tag | Retrieves all quotes with submitted tag.  |
+| GET    | /quotes/?tag=tag | Retrieves all quotes with submitted tag. (i.e. "/quotes/?tag=computer)  |
 | GET    | /quotes/?author=author | Retrieves all quotes by submitted author.  |
 | POST  | /quotes/ | Creates a new quote based on the JSON body submitted.   |
 | PUT    | /quotes/:id | Updates a single quote based on the JSON submitted.    |
