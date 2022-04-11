@@ -8,7 +8,7 @@ This REST API contains almost 4,000 quotes from [Brainy Quote](https://www.brain
 2) Install dependencies.
 3) Seed the database.
 4) Start server link.
-5) Either view the API info through a browser for the seeded information or manipulate the information through apps like Postman.
+5) Either view the API info through a browser for the seeded information or manipulate the information through apps like [Postman]("https://www.postman.com/").
 
 ### Clone repository
 
@@ -36,8 +36,6 @@ npm start
 
 ## API Endpoints
 
-Only GET commands will work in browser. You can use an app like [Postman]("https://www.postman.com/") for further API manipulation.
-
 | Method | Endpoint         | Description             |
 | ------ | ---------------- | ----------------------- |
 | GET    | /quotes/             | Retrieves all quotes in the database   |
@@ -47,3 +45,5 @@ Only GET commands will work in browser. You can use an app like [Postman]("https
 | POST  | /quotes/ | Creates a new quote based on the JSON body submitted.   |
 | PUT    | /quotes/:id | Updates a single quote based on the JSON submitted.    |
 | DELETE | /quotes/:id | Deletes a single quote by ID.    |
+
+*Note: only GET commands will work in browser*
