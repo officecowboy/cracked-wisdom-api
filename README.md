@@ -8,7 +8,7 @@ This REST API contains almost 4,000 quotes from [Brainy Quote](https://www.brain
 2) Install dependencies.
 3) Seed the database.
 4) Start server link.
-5) Either view the API info through a browser for the seeded information or manipulate the information through apps like [Postman]("https://www.postman.com/").
+5) Either view the API info through a browser for the seeded information or manipulate the information through apps like [Postman](https://www.postman.com/).
 
 ### Clone repository
 
