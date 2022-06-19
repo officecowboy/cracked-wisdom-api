@@ -12,12 +12,13 @@ let phones = require('./phones.json')
 // Import Phone model
 let Phone = require('../server/phones/model')
 
-Quote.deleteMany({})
-Phone.deleteMany({})
-  .then(() => {
-    Quote.create(quotes)
-    Phone.create(phones)
-      .then(() => {
-        database.disconnect()
-      })
-  })
+const seedDB = async () => {
+  await Quote.deleteMany({});
+  await Quote.create(quotes);
+  await Phone.deleteMany({});
+  await Phone.create(phones);
+}
+
+seedDB().then(() => {
+  database.disconnect();
+})
