@@ -1,6 +1,9 @@
 //Import Mongoose Library
 let mongoose = require('mongoose')
 
+//Import dotenv pacakage
+require('dotenv').config();
+
 // Connect to MongoDB
 const DATABASE_NAME = 'crackedwisdom'
 const MONGODB_URI = process.env.PROD_MONGODB || `mongodb://127.0.0.1:27017/${DATABASE_NAME}`
