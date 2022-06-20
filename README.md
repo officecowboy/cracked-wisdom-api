@@ -27,7 +27,7 @@ git clone https://github.com/officecowboy/cracked-wisdom-api.git
 ### Install dependencies
 
 ```
-npm install express mongoose cors
+npm install
 ```
 
 ### Seed the data
