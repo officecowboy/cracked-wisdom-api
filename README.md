@@ -4,7 +4,11 @@
 
 ## Description
 
-This REST API contains a [MondoDB](https://www.mongodb.com/) model with almost 4,000 quotes from [Brainy Quote](https://www.brainyquote.com/), categorized by four tags: alone, computer, future, and techology.
+This REST API contains two [MondoDB](https://www.mongodb.com/) models:
+1) 1,000 quotes from [Brainy Quote](https://www.brainyquote.com/), categorized by four tags: alone, computer, future, and techology.
+2) 300 images of cracked phone screens submitted for repair.
+
+You can experience it at the [Information Arcade](https://informationarcade.com/cracked-wisdom/).
 
 ## Instructions for local manipulation
 
@@ -23,7 +27,7 @@ git clone https://github.com/officecowboy/cracked-wisdom-api.git
 ### Install dependencies
 
 ```
-npm install express mongoose
+npm install express mongoose cors
 ```
 
 ### Seed the data
@@ -42,6 +46,10 @@ npm start
 
 | Method | Endpoint         | Description             |
 | ------ | ---------------- | ----------------------- |
+| GET    | /phones/             | Retrieves all phone img URLs in the database   |
+| GET    | /phones/:id          | Retrieves a single phone by object ID.  |
+| GET    | /phones/random   | Retrieves one random phone. |
+| GET    | /phones/random-ten | Retrieves an array of ten random phones.  |
 | GET    | /quotes/             | Retrieves all quotes in the database   |
 | GET    | /quotes/:id          | Retrieves a single quote by object ID.  |
 | GET    | /quotes/random   | Retrieves one random quote. |
@@ -56,4 +64,4 @@ npm start
 
 ## Next Steps
 
-I'm in the process of adding a second model that contains images of smartphones with cracked screens. My end goal with this project is to build a front-end interface that allows users to generate and download random quote cards like the preview image above. Then I'll set up a Twitter bot ([@crackedwisdom](https://twitter.com/crackedwisdom)) that posts a new quote card everyday.
+Build a Twitter bot ([@crackedwisdom](https://twitter.com/crackedwisdom)) that posts a new quote card everyday!
